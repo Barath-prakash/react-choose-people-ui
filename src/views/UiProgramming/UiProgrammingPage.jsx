@@ -67,7 +67,7 @@ class UiProgramming extends React.Component {
 
   reduceChildCnt = () => {
     this.setState({
-       childrens: (this.state.childrens > 0 && (this.state.adults + this.state.childrens > this.state.rooms * 4)) ? this.state.childrens - 1 : this.state.childrens
+       childrens: (this.state.childrens > 0 && (this.state.adults + this.state.childrens <= this.state.rooms * 4)) ? this.state.childrens - 1 : this.state.childrens
     })
   }
 
